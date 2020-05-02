@@ -49,12 +49,6 @@ public class MyGame extends JFrame {
             buttons[j].addActionListener(new ImageButtonListener());
             buttons[j].setIcon(closedIcon);
             add(buttons[j++]);
-
-            // icons[j] = icons[j - 1];
-            //buttons[j] = new JButton("");
-           // buttons[j].addActionListener(new ImageButtonListener());
-          //  buttons[j].setIcon(closedIcon);
-           // add(buttons[j++]);
         }
         
         // Pack and display the window.
@@ -62,7 +56,6 @@ public class MyGame extends JFrame {
         setVisible(true);
         
         myTimer = new Timer(1000, new TimerListener());
-        // myTimer.start();
     }
         private static void shuffle(String[] files){
         int i;
